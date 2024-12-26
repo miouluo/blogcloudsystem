@@ -1,0 +1,13 @@
+<!--pages/auth/auth.wxml-->
+<view class="container">
+<image src="../../images/logo.jpg" mode="aspectFill"/>
+  <view>该应用授权以下信息</view>
+  <view>获取你的公开信息（昵称，性别，头像）</view>
+  <view class="weui-flex">
+    <button type="warn">拒绝</button>
+    <!-- class="weui-btn_warn" style="color:red;background-color:#eeeded" -->
+    <button type="primary">允许</button>
+    <!-- class="weui-bth-primary" style="color: #fff;" -->
+    <!-- bind:tap="jumpToBlog" -->
+  </view>
+</view>

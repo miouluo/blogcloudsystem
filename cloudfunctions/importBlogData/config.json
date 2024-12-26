@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "openapi": [],
+    "database": {
+      "blog": {
+        "read": true,
+        "write": true
+      }
+    }
+  },
+  "env": "clound-0gt7nesg13edd57a"
+} 

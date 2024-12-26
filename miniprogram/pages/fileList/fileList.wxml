@@ -1,0 +1,14 @@
+<view class="container">
+  <view class="file-list">
+  <view>文件列表</view>
+    <block wx:for="{{files}}" wx:key="_id">
+      <view class="file-item" bindlongpress="onLongPress" data-file="{{item}}">
+        <view class="file-info">
+          <text class="file-name">{{item.name}}</text>
+          <text class="file-size">{{item.sizeText}}</text>
+        </view>
+        <button class="download-btn" size="mini" bindtap="downloadFile" data-file="{{item}}">下载</button>
+      </view>
+    </block>
+  </view>
+</view> 

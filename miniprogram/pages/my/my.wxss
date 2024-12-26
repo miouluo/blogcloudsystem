@@ -1,0 +1,121 @@
+/* pages/my/my.wxss */
+.container {
+  padding: 30rpx;
+  background: #fff;
+  align-items: flex-start;
+}
+
+/* 用户信息样式 */
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40rpx;
+  width: 100%;
+}
+
+.avatar-wrapper {
+  padding: 0;
+  width: 128rpx !important;
+  height: 128rpx;
+  border-radius: 50%;
+  margin-bottom: 20rpx;
+}
+
+.avatar {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+}
+
+.nickname-input {
+  text-align: center;
+  font-size: 32rpx;
+  color: #333;
+  padding: 10rpx;
+  border-bottom: 1rpx solid #eee;
+}
+
+/* 标题样式 */
+.section-title {
+  font-size: 28rpx;
+  color: #333;
+  margin: 30rpx 0 20rpx;
+  width: 100%;
+  text-align: left;
+}
+
+/* 按钮基础样式 */
+.btn {
+  margin: 0 !important;
+  color: white !important;
+  font-size: 28rpx;
+  padding: 15rpx 0;
+  border: none !important;
+  text-align: center;
+  min-width: 0;
+}
+
+.btn-green {
+  background-color: #07c160 !important;
+}
+
+.btn-gray {
+  background-color: #999999 !important;
+}
+
+.btn-red {
+  background-color: #ff0000 !important;
+}
+
+/* 云数据库按钮 */
+.db-buttons {
+  display: flex;
+  gap: 20rpx;
+  margin-bottom: 20rpx;
+  width: 100%;
+}
+
+.db-buttons .btn {
+  flex: 1;
+  width: 25%;
+}
+
+/* 云存储按钮 */
+.storage-buttons {
+  display: flex;
+  gap: 20rpx;
+  margin-bottom: 20rpx;
+  width: 50%;
+}
+
+.storage-buttons .btn {
+  flex: 1;
+  width: 50%;
+}
+
+/* 云函数按钮 */
+.cloud-buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20rpx;
+}
+
+.cloud-row {
+  display: flex;
+  gap: 20rpx;
+  width: 100%;
+}
+
+/* 第一行按钮样式（两个按钮） */
+.cloud-row:first-child .btn {
+  flex: 1;
+  width: calc(50% - 10rpx);
+}
+
+/* 第二行按钮样式（四个按钮） */
+.cloud-row:last-child .btn {
+  flex: 1;
+  width: calc(25% - 15rpx);
+}

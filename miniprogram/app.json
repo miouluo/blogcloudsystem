@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/auth/auth",
+    "pages/blog/blog",
+    "pages/content/content",
+    "pages/addblog/addblog",
+    "pages/my/my",
+    "pages/index/index",
+    "pages/fileList/fileList"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarBackgroundColor": "#ffffff"
+  },
+  "tabBar":{
+    "list":[{
+      "pagePath":"pages/blog/blog",
+      "text":"推荐",
+      "iconPath":"./images/blog.png",
+      "selectedIconPath":"./images/blog_cur.png"
+    },
+    {
+      "pagePath":"pages/addblog/addblog",
+      "text":"发文章",
+      "iconPath":"./images/add.png",
+      "selectedIconPath":"./images/add_cur.png"
+    },
+    {
+      "pagePath":"pages/my/my",
+      "text":"我的",
+      "iconPath":"./images/my.png",
+      "selectedIconPath":"./images/my_cur.png"
+    },
+    {
+      "pagePath":"pages/index/index",
+      "text":"首页",
+      "iconPath":"./images/view.png",
+      "selectedIconPath":"./images/viewed.png"
+    }
+  ]
+
+  },
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

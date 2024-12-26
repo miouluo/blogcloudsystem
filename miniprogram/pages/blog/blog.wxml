@@ -1,0 +1,41 @@
+<view class="blog-list">
+  <!-- 添加导入按钮（开发环境使用） -->
+  <button bindtap="importData" type="primary" style="margin-bottom: 20rpx;">导入测试数据</button>
+  
+  <!-- 添加调试信息 -->
+  <view class="debug-info" style="padding: 10px; color: #666;">
+    博客数量: {{bloglist.length}}
+  </view>
+  
+  <block wx:for="{{bloglist}}" wx:key="_id">
+    <view class="blog-item" bindtap="onBlogContent" data-blog-id="{{item._id}}">
+      <view class="blog-header">
+        <view class="blog-info">
+          <text class="blog-hint">{{item.hint}}</text>
+          <text class="blog-date">{{item.date}}</text>
+        </view>
+        <view class="blog-title">{{item.title}}</view>
+      </view>
+      
+      <view class="blog-body">
+        <image class="blog-image" src="{{item.image}}" mode="aspectFill"></image>
+        <view class="blog-content">{{item.content}}</view>
+      </view>
+
+      <view class="blog-footer">
+        <view class="action-item">
+          <image class="icon" src="../../images/{{item.readingStatus ? 'viewed' : 'view'}}.png"></image>
+          <text>{{item.readingNum}}</text>
+        </view>
+        <view class="action-item" catchtap="onLike" data-blog-id="{{item._id}}">
+          <image class="icon" src="../../images/{{item.likeStatus ? 'likeed' : 'like'}}.png"></image>
+          <text>{{item.likeNum}}</text>
+        </view>
+        <view class="action-item">
+          <image class="icon" src="../../images/{{item.commentStatus ? 'commented' : 'comment'}}.png"></image>
+          <text>{{item.commentNum}}</text>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

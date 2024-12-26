@@ -1,0 +1,57 @@
+<view class="container">
+  <form bindsubmit="formSubmit">
+    <view class="form-group">
+      <view class="form-label">文章主题</view>
+      <input 
+        class="form-input"
+        name="title" 
+        type="text" 
+        placeholder="请输入文章主题" 
+        bindinput="changeInput"
+        value="{{form.title}}"
+      />
+    </view>
+
+    <view class="form-group">
+      <view class="form-label">文章内容</view>
+      <textarea 
+        class="form-textarea"
+        name="content" 
+        placeholder="请输入文章内容" 
+        auto-height="true" 
+        bindinput="changeInput"
+        value="{{form.content}}"
+      />
+    </view>
+
+    <view class="form-group">
+      <view class="form-label">作者性别</view>
+      <radio-group class="radio-group" bindchange="changeRadio" name="sex">
+        <label class="radio-label">
+          <radio value="male" checked="{{form.sex === 'male'}}">男</radio>
+        </label>
+        <label class="radio-label">
+          <radio value="female" checked="{{form.sex === 'female'}}">女</radio>
+        </label>
+      </radio-group>
+    </view>
+
+    <view class="form-group">
+      <view class="form-label">封面图片</view>
+      <view class="image-uploader">
+        <view class="image-list">
+          <block wx:for="{{imgList}}" wx:key="id">
+            <view class="image-item">
+              <image src="{{item.tempFilePath}}" mode="aspectFill" />
+            </view>
+          </block>
+        </view>
+        <view wx:if="{{imgList.length < 1}}" class="upload-button" bind:tap="chooseImage">
+          <text class="upload-icon">+</text>
+        </view>
+      </view>
+    </view>
+
+    <button class="submit-button" type="primary" form-type="submit">发布文章</button>
+  </form>
+</view>

@@ -1,0 +1,8 @@
+/* pages/auth/auth.wxss */
+
+image{
+  width: 750rpx;
+  height: 500rpx;
+  /* margin: 100px 100px; */
+  /* align-items: center; */
+}

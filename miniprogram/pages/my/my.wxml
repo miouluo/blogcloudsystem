@@ -1,0 +1,43 @@
+<!--pages/my/my.wxml-->
+<view class="container">
+  <!-- 用户信息 -->
+  <view class="user-info">
+    <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+      <image class="avatar" src="{{userInfo.avatarUrl || defaultAvatarUrl}}"></image>
+    </button>
+    <input type="nickname" class="nickname-input" placeholder="请输入昵称" bind:change="onInputChange" value="{{userInfo.nickName}}" />
+  </view>
+
+  <!-- 云数据库 -->
+  <text class="section-title">云数据库</text>
+  <view class="db-buttons">
+    <button class="btn btn-green" bindtap="importData">插入数据</button>
+    <button class="btn btn-green" bindtap="uploadData">更新数据</button>
+    <button class="btn btn-gray" bindtap="checkData">查找数据</button>
+    <button class="btn btn-red" bindtap="deleteData">删除数据</button>
+  </view>
+
+  <!-- 云存储 -->
+  <text class="section-title">云存储</text>
+  <view class="storage-buttons">
+    <button class="btn btn-green" bindtap="uploadFile">上传文件</button>
+    <button class="btn btn-green" bindtap="downloadFile">下载文件</button>
+  </view>
+
+  <!-- 云函数 -->
+  <text class="section-title">云函数</text>
+  <view class="cloud-buttons">
+    <!-- 第一行两个按钮 -->
+    <view class="cloud-row">
+      <button class="btn btn-green" bindtap="cloudSum">云函数求两个数的和</button>
+      <button class="btn btn-green" bindtap="getOpenid">获取用户openid</button>
+    </view>
+    <!-- 第二行四个按钮 -->
+    <view class="cloud-row">
+      <button class="btn btn-green" bindtap="cloudInsert">插入数据</button>
+      <button class="btn btn-green" bindtap="cloudUpdate">更新数据</button>
+      <button class="btn btn-gray" bindtap="cloudQuery">查询数据</button>
+      <button class="btn btn-red" bindtap="cloudDelete">删除数据</button>
+    </view>
+  </view>
+</view>
