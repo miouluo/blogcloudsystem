@@ -1,6 +1,6 @@
 const envList = [
   {
-    envId: 'clound-0gt7nesg13edd57a',
+    envId: '',
     name: '正式环境'
   }
 ]
