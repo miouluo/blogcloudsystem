@@ -154,9 +154,6 @@ git clone https://github.com/your-username/your-project-name.git
 ## 许可证
 MIT License
 
-## 联系方式
-[在这里添加您的联系方式]
-
 ## 更新日志
 ### v1.0.0 (2024-12-27)
 - 初始版本发布
