@@ -2,7 +2,7 @@
 const cloud = require('wx-server-sdk')
 
 cloud.init({
-  env: 'clound-0gt7nesg13edd57a',
+  env: '',
   traceUser: true
 })
 

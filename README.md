@@ -31,44 +31,86 @@
 - JavaScript/WXML/WXSS
 
 ## 项目结构
-├── cloudfunctions/ // 云函数目录
-│ ├── getOpenId/ // 获取用户OpenID
-│ ├── importBlogData/ // 导入博客数据
-│ ├── operateDB/ // 数据库操作
-│ └── sum/ // 计算示例
-├── miniprogram/ // 小程序源码
-│ ├── pages/ // 页面文件
-│ │ ├── addblog/ // 发布文章
-│ │ ├── auth/ // 用户授权
-│ │ ├── blog/ // 文章列表
-│ │ ├── content/ // 文章详情
-│ │ ├── fileList/ // 文件列表
-│ │ ├── index/ // 首页
-│ │ └── my/ // 个人中心
-│ ├── images/ // 图片资源
-│ └── app.js // 小程序入口文件
-└── project.config.json // 项面配置文件
+```
+├── cloudfunctions/          # 云函数目录
+│   ├── getOpenId/          # 获取用户OpenID
+│   ├── importBlogData/     # 导入博客数据
+│   ├── operateDB/          # 数据库操作
+│   └── sum/                # 计算示例
+├── miniprogram/            # 小程序源码
+│   ├── pages/             # 页面文件
+│   │   ├── addblog/      # 发布文章
+│   │   ├── auth/         # 用户授权
+│   │   ├── blog/         # 文章列表
+│   │   ├── content/      # 文章详情
+│   │   ├── fileList/     # 文件列表
+│   │   ├── index/        # 首页
+│   │   └── my/           # 个人中心
+│   ├── images/           # 图片资源
+│   └── app.js            # 小程序入口文件
+└── project.config.json    # 项目配置文件
 
 
 ## 功能展示
-[在这里添加功能截图]
 
 ### 用户管理
 - 用户登录界面
-- 个人信息设置
+
+![用户登录](./images/login.jpg)
+![登录成功](./images/login_success.jpg)
 
 ### 文章管理
 - 文章列表
+
+利用云函数向云数据库中导入两条案例博客数据，并展示在文章列表中
+
+![文章列表](./images/blog_list.jpg)
+
 - 发布文章
+
+![发布文章](./images/add_blog.jpg)
+
+![发布文章详情](./images/add_blog_detail.jpg)
+
+![发布文章成功](./images/add_blog_success.jpg)
+
 - 文章详情
+
+![文章详情](./images/blog_detail.jpg)
+
+### 云数据库功能
+
+![数据库查询](./images/db_query.jpg)
 
 ### 云存储功能
 - 文件上传
+
+![文件上传](./images/file_upload.jpg)
+
 - 文件列表
+
+![文件列表](./images/file_list.jpg)
+
+- 文件删除（删除云存储中的文件，通过长按鼠标的方式）
+
+![文件删除](./images/file_delete.jpg)
+
+- 文件删除成功
+
+![文件删除成功](./images/file_delete_success.jpg)
 
 ### 云函数功能
 - 数据库操作界面
+
+![数据库操作](./images/db_operate.jpg)
+
 - 计算示例
+
+![计算示例](./images/sum.jpg)
+
+- 获取用户OpenID
+
+![获取用户OpenID](./images/get_openid.jpg)
 
 ## 安装和使用
 1. 克隆项目

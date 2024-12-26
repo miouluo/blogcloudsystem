@@ -21,7 +21,7 @@
     "compileHotReLoad": false,
     "useMultiFrameRuntime": true,
     "useApiHook": true,
-    "useApiHostProcess": true,
+    "useApiHostProcess": true
     "babelSetting": {
       "ignore": [],
       "disablePlugins": [],
@@ -36,7 +36,7 @@
     "packNpmRelationList": [],
     "minifyWXSS": true
   },
-  "appid": "wxf7b99005651fafbe",
+  "appid": "",
   "projectname": "blogcloud",
   "libVersion": "3.6.1",
   "cloudfunctionTemplateRoot": "cloudfunctionTemplate/",

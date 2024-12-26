@@ -2,7 +2,8 @@ const cloud = require('wx-server-sdk')
 const insert = require('./modules/insert')
 
 cloud.init({
-  env: 'clound-0gt7nesg13edd57a'
+  env: ''
+  // 换成自己的环境id
 })
 
 // 云函数入口函数
