@@ -49,7 +49,7 @@
 │   ├── images/           # 图片资源
 │   └── app.js            # 小程序入口文件
 └── project.config.json    # 项目配置文件
-
+```
 
 ## 功能展示
 
