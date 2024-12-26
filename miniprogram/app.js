@@ -6,11 +6,11 @@ App({
     } else {
       // 初始化云开发环境
       wx.cloud.init({
-        env: 'clound-0gt7nesg13edd57a',
+        env: '',
         traceUser: true,
         success: () => {
           // 保存环境ID到全局数据
-          this.globalData.cloudEnv = 'clound-0gt7nesg13edd57a'
+          this.globalData.cloudEnv = ''
           console.log('云环境初始化成功，当前环境：', this.globalData.cloudEnv)
         },
         fail: err => {
