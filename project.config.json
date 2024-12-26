@@ -34,7 +34,7 @@
     "userConfirmedBundleSwitch": false,
     "packNpmManually": false,
     "packNpmRelationList": [],
-    "minifyWXSS": true
+    "minifyWXSS": true,
   },
   "appid": "",
   "projectname": "blogcloud",
