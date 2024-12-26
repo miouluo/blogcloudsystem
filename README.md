@@ -115,7 +115,7 @@
 ## 安装和使用
 1. 克隆项目
 bash
-git clone https://github.com/your-username/your-project-name.git
+git clone https://github.com/miouluo/blogcloudsystem.git
 
 
 
